@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bishtah - Episodes of Your Life</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Alyamama:wght@300;400;500;600;700;800;900&family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet"></head>
+<body>
+<div class="container">
+
+<input type="checkbox" id="menu-toggle">
+
+<div id="top"></div>
+
+    <!-- ===== HEADER ===== -->
+ <header class="store-header">
+
+    <div class="header-left">
+
+        <a href="cart.html" class="icon-btn">
+    <i class="fa-solid fa-cart-shopping"></i>
+</a>
+
+        <a href="wishlist.html" class="icon-btn">
+<i class="fa-solid fa-heart"></i>
+</a>
+
+    </div>
+
+
+    <div class="header-center">
+        <h1>BISHTAH LINE</h1>
+        <p>Episodes of Your Life</p>
+    </div>
+
+
+    <div class="header-right">
+
+        <label for="menu-toggle" class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+
+    </div>
+
+</header>
+
+
+
+<div class="sidebar">
+
+   <label for="menu-toggle" class="close-btn">
+      <i class="fa-solid fa-xmark"></i>
+   </label>
+
+   <div class="profile-section">
+    <a href="admin-log.html">
+        <img src="userr.png" class="profile-img">
+        <div class="username">Account</div>
+    </a>
+</div>
+
+
+<div class="sidebar-links">
+    <hr>
+     <a href="home.html">Home</a>  
+    <hr>
+    <a href="webp.html">All Abayas</a>
+    <hr>
+    <a href="custom.html">Custom Order</a>
+    <hr>
+    <a href="order.html">My Order</a>
+    <hr>
+    
+</div>
+
+<div class="logout-section">
+    <a href="#" class="logout-btn">Log Out</a>
+</div>
+</div>
+
+<label for="menu-toggle" class="overlay"></label>
+<!-- ===== CONTENT الخاص بالاتصال ===== -->
+<div class="contact-page-header">
+    <h2>Contact Us</h2>
+    <p>We are here to help and answer any questions you may have</p>
+</div>
+
+<div class="contact-grid">
+    <div class="contact-white-card">
+        <h3>Send us a message</h3>
+        <div id="msgStatus" class="contact-success-msg">✓ Your message has been sent successfully!</div>
+        <form onsubmit="event.preventDefault(); document.getElementById('msgStatus').classList.add('show'); setTimeout(()=>this.reset(), 2000);">
+            <div class="contact-form-row">
+                <input type="text" class="contact-form-input" placeholder="Full Name" required>
+                <input type="email" class="contact-form-input" placeholder="Email Address" required>
+            </div>
+            <div class="contact-form-row">
+                <input type="tel" class="contact-form-input" placeholder="Phone Number">
+                <select class="contact-form-input" required>
+                    <option value="">-- Select Subject --</option>
+                    <option>Design Inquiry</option>
+                    <option>Order Tracking</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <textarea class="contact-form-input" style="min-height: 120px;" placeholder="Write your message here..." required></textarea>
+            <button type="submit" class="contact-btn-submit">Send Message</button>
+        </form>
+    </div>
+
+    <div class="contact-white-card">
+        <h3>Contact Information</h3>
+        
+        <div class="contact-info-item">
+            <div class="contact-info-icon">📍</div>
+            <div class="contact-info-text">
+                <h4>Address</h4>
+                <p>Riyadh, Saudi Arabia<br>Al-Nakheel Dist. - King Fahd Road</p>
+            </div>
+        </div>
+        
+        <div class="contact-info-item">
+            <div class="contact-info-icon">📞</div>
+            <div class="contact-info-text">
+                <h4>Phone</h4>
+                <p>+966 11 2345 678</p>
+            </div>
+        </div>
+        
+        <div class="contact-info-item" style="border: none;">
+            <div class="contact-info-icon">✉️</div>
+            <div class="contact-info-text">
+                <h4>Email</h4>
+                <p>info@bishtah.com</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-links">
+            <a href="https://www.instagram.com/bishtah_line?igsh=YnFubHk4YnQycTdy" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+                </a>
+            <a href="contact.html">
+              Contact us
+            </a>
+        </div>
+        <p class="copyright">© 2026 All rights reserved</p>
+    </div>
+</footer>
+
+
+<a href="#top" class="back-to-top">↑</a>
+
+</div> <!-- نهاية container -->
+
+</body>
+</html>

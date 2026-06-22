@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Registration | BISHTAH LINE</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="login-page">
+
+<input type="checkbox" id="menu-toggle">
+<div id="top"></div>
+
+<!-- ===== HEADER ===== -->
+<header class="store-header">
+
+    <div class="header-left">
+        <a href="cart.html" class="icon-btn">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+
+        <a href="wishlist.html" class="icon-btn">
+            <i class="fa-solid fa-heart"></i>
+        </a>
+    </div>
+
+    <div class="header-center">
+        <h1>BISHTAH LINE</h1>
+        <p>Admin Portal</p>
+    </div>
+
+    <div class="header-right">
+        <label for="menu-toggle" class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+    </div>
+
+</header>
+
+
+<!-- ===== SIDEBAR ===== -->
+<div class="sidebar">
+
+<label for="menu-toggle" class="close-btn">
+<i class="fa-solid fa-xmark"></i>
+</label>
+
+<div class="profile-section">
+    <a href="admin-log.html">
+    <img src="userr.png" class="profile-img">
+    <div class="username">Admin Account</div>
+  </a>
+</div>
+
+<div class="sidebar-links">
+<a href="home.html">Home</a>
+<hr>
+<a href="webp.html">All Abayas</a>
+<hr>
+<a href="custom.html">Custom Order</a>
+<hr>
+<a href="order.html">My Order</a>
+<hr>
+<a href="manage.html" style="color:#444;    font-size:20px;">
+Manage
+</a>
+<hr>
+</div>
+
+<div class="logout-section">
+<a href="#" class="logout-btn">Log Out</a>
+</div>
+
+</div>
+
+<label for="menu-toggle" class="overlay"></label>
+
+
+<!-- ===== FORM CONTENT ===== -->
+<div class="container admin-page-full">
+
+<div class="card">
+
+<h2 style="text-align:center;margin-bottom:10px;">
+Admin Registration
+</h2>
+
+<p style="text-align:center;color:#666;margin-bottom:25px;">
+Set up a new administrator account.
+</p>
+
+<form action="adminlogin.html">
+
+<input type="text"
+placeholder="Admin Full Name"
+required
+class="admin-input-style">
+
+<input type="email"
+placeholder="Work Email"
+required
+class="admin-input-style">
+
+<input type="password"
+placeholder="Access Password"
+required
+class="admin-input-style">
+
+<input type="text"
+pattern="1122"
+title="يرجى إدخال كود الصلاحية الصحيح (1122)"
+placeholder="Admin Authorization Code"
+required
+class="admin-input-style">
+
+<button type="submit" class="admin-btn-main">
+Register as Admin
+</button>
+
+</form>
+
+
+<div style="margin-top:25px;text-align:center;font-size:0.9rem;">
+<p>
+Already have admin access?
+<a href="admin-log.html"
+style="color:#70799f;font-weight:900;text-decoration:none;">
+Login here
+</a>
+</p>
+</div>
+
+</div>
+
+</div>
+
+</body>
+</html>

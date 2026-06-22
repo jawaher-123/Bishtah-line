@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom Abaya</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Alyamama:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="custom-page">
+
+<input type="checkbox" id="menu-toggle">
+
+<header class="store-header">
+
+<div class="header-left">
+<a href="cart.html" class="icon-btn"><i class="fa-solid fa-cart-shopping"></i></a>
+<a href="wishlist.html" class="icon-btn"><i class="fa-solid fa-heart"></i></a>
+</div>
+
+<div class="header-center">
+<h1>BISHTAH LINE</h1>
+<p>Episodes of Your Life</p>
+</div>
+
+<div class="header-right">
+<label for="menu-toggle" class="menu-icon">
+<i class="fa-solid fa-bars"></i>
+</label>
+</div>
+
+</header>
+
+
+<div class="sidebar">
+
+<label for="menu-toggle" class="close-btn">
+<i class="fa-solid fa-xmark"></i>
+</label>
+
+<div class="profile-section">
+    <a href="admin-log.html">
+<img src="userr.png" class="profile-img">
+<div class="username">Account</div>
+</a>
+</div>
+
+<div class="sidebar-links">
+<hr>
+<a href="home.html">Home</a>
+<hr>
+<a href="webp.html">All Abayas</a>
+<hr>
+<a href="custom.html" style="color:#444;    font-size:20px;
+">Custom Order</a>
+<hr>
+<a href="order.html">My Order</a>
+<hr>
+</div>
+
+<div class="logout-section">
+<a href="#" class="logout-btn">Log Out</a>
+</div>
+
+</div>
+
+<label for="menu-toggle" class="overlay"></label>
+
+
+<main class="fl-container">
+
+<section class="fl-card">
+
+<h1 style="font-family:'Alyamama';color:#333;margin-bottom:10px;">
+Design Your Custom Abaya ✨
+</h1>
+
+<p style="color:#666;">
+Choose your preferred style, color, and size to create a piece that fits your episode.
+</p>
+
+</section>
+
+
+<form class="fl-card" action="order.html" method="get">
+
+<h2 style="font-size:1.2rem;margin-bottom:25px;color:#9AAFB1;">
+1. Choose a Style (Required)
+</h2>
+
+
+<div class="models-grid">
+
+<input type="radio" name="model" id="m1" class="model-radio" value="Bisht Style" required>
+<label class="model-card" for="m1">
+<img src="7.jpg.jpeg">
+<div style="font-weight:900;">Bisht Style</div>
+</label>
+
+
+<input type="radio" name="model" id="m2" class="model-radio" value="Cloché Style">
+<label class="model-card" for="m2">
+<img src="8.jpg.jpeg">
+<div style="font-weight:900;">Cloché Style</div>
+</label>
+
+
+<input type="radio" name="model" id="m3" class="model-radio" value="Quarter Cloché">
+<label class="model-card" for="m3">
+<img src="9.jpg.jpeg">
+<div style="font-weight:900;">Quarter Cloché</div>
+</label>
+
+
+<input type="radio" name="model" id="m4" class="model-radio" value="Classic Style">
+<label class="model-card" for="m4">
+<img src="6.jpg.jpeg">
+<div style="font-weight:900;">Classic Style</div>
+</label>
+
+</div>
+
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:30px;">
+
+
+<div class="field">
+
+<label>Pick Your Abaya Color</label>
+
+<div class="color-picker-container">
+<input type="color" name="color" value="#000000">
+<span style="color:#888;font-size:0.9rem;">
+Click the circle to pick any color
+</span>
+</div>
+
+</div>
+
+
+<div class="field">
+
+<label>Select Size</label>
+
+<div class="size-selector">
+
+<input type="radio" name="size" id="s52" class="size-radio" value="52" required>
+<label class="size-label" for="s52">52</label>
+
+<input type="radio" name="size" id="s54" class="size-radio" value="54">
+<label class="size-label" for="s54">54</label>
+
+<input type="radio" name="size" id="s56" class="size-radio" value="56">
+<label class="size-label" for="s56">56</label>
+
+<input type="radio" name="size" id="s58" class="size-radio" value="58">
+<label class="size-label" for="s58">58</label>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="field">
+<label>Upload Your Sketch (Optional)</label>
+
+<input type="file" accept="image/*"
+style="width:100%;padding:15px;border:1px dashed #9AAFB1;border-radius:12px;background:#fcfcfc;">
+</div>
+
+
+<button type="submit" class="btn-submit">
+Submit Custom Request
+</button>
+
+</form>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-links">
+
+            <a href="https://www.instagram.com/bishtah_line?igsh=YnFubHk4YnQycTdy" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+
+            <a href="contact.html">
+              Contact us
+            </a>
+
+        </div>
+
+        <p class="copyright">© 2026 All rights reserved</p>
+    </div>
+</footer>
+
+<a href="#top" class="back-to-top">↑</a>
+
+</body>
+</html>

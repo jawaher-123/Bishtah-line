@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login | BISHTAH LINE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="login-page">
+
+    <input type="checkbox" id="menu-toggle">
+    
+    <header class="store-header">
+        <div class="header-left">
+            <a href="cart.html" class="icon-btn"><i class="fa-solid fa-cart-shopping"></i></a>
+            <a href="wishlist.html" class="icon-btn"><i class="fa-solid fa-heart"></i></a>
+        </div>
+        <div class="header-center">
+            <h1>BISHTAH LINE</h1>
+            <p>Admin Portal</p>
+        </div>
+        <div class="header-right">
+            <label for="menu-toggle" class="menu-icon"><i class="fa-solid fa-bars"></i></label>
+        </div>
+    </header>
+
+    <div class="sidebar">
+       <label for="menu-toggle" class="close-btn"><i class="fa-solid fa-xmark"></i></label>
+       <div class="profile-section">
+    <a href="admin-log.html">
+    <img src="userr.png" class="profile-img">
+    <div class="username">Admin Account</div>
+  </a>
+</div>
+       <div class="sidebar-links">
+            <a href="home.html">Home</a>  
+            <a href="webp.html">All Abayas</a>
+            <a href="custom.html">Custom Order</a>
+            <a href="order.html">My Order</a>
+            <a href="manage.html" style="color: #444;    font-size:20px;">Manage</a>
+       </div>
+       <div class="logout-section" style="margin-top: auto; padding: 20px;">
+           <a href="login.html" class="logout-btn" style="color: #d9534f; font-weight: 900; text-decoration: none; border-top: 1px solid #ddd; display: block; padding-top: 15px; text-align: center;">
+               Log Out
+           </a>
+       </div>
+    </div>
+
+    <label for="menu-toggle" class="overlay"></label>
+
+    <div class="container admin-page-full">
+        <div class="card shadow-lg">
+            <h2>Admin Login</h2>
+            <p>Login to manage BISHTAH products.</p>
+            <form action="mproduct.html" method="GET">
+                <input type="email" placeholder="Admin Email" required 
+                       style="width: 100%; padding: 12px; margin-bottom: 10px; border-radius: 8px; border: 1px solid #ddd;">
+                
+                <input type="text" 
+                       pattern="1122" 
+                       title="يرجى إدخال الكود الصحيح (1122)" 
+                       placeholder="Password" 
+                       required 
+                       style="width: 100%; padding: 12px; margin-bottom: 15px; border-radius: 8px; border: 1px solid #ddd;">
+            
+                <button type="submit" 
+                        style="width: 100%; padding: 12px; background: #7c90a5; color: white; border: none; border-radius: 8px; font-weight: 900; cursor: pointer;">
+                    Login
+                </button>
+            </form>
+
+            <div class="footer" style="margin-top: 20px; text-align: center;">
+                <p style="font-size: 0.9rem;">New Administrator? <a href="admin-rig.html" style="color: #70799f; font-weight: 900; text-decoration: none;">Create Admin Account</a></p>
+                <hr style="margin: 15px 0; opacity: 0.3;">
+                <a href="login.html" style="font-size: 0.8rem; color: #888; text-decoration: none;">Back to Customer Login</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bishtah - Episodes of Your Life</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Alyamama:wght@300;400;500;600;700;800;900&family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet"></head>
+<body>
+<div class="container">
+
+<input type="checkbox" id="menu-toggle">
+
+<div id="top"></div>
+
+    <!-- ===== HEADER ===== -->
+ <header class="store-header">
+
+    <div class="header-left">
+
+        <a href="cart.html" class="icon-btn">
+    <i class="fa-solid fa-cart-shopping"></i>
+</a>
+
+        <a href="wishlist.html" class="icon-btn">
+<i class="fa-solid fa-heart"></i>
+</a>
+
+    </div>
+
+
+    <div class="header-center">
+        <h1>BISHTAH LINE</h1>
+        <p>Episodes of Your Life</p>
+    </div>
+
+
+    <div class="header-right">
+
+        <label for="menu-toggle" class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+
+    </div>
+
+</header>
+
+
+
+<div class="sidebar">
+
+   <label for="menu-toggle" class="close-btn">
+      <i class="fa-solid fa-xmark"></i>
+   </label>
+
+   <div class="profile-section">
+    <a href="admin-log.html">
+        <img src="userr.png" class="profile-img">
+        <div class="username">Account</div>
+    </a>
+</div>
+
+
+<div class="sidebar-links">
+    <hr>
+     <a href="home.html">Home</a>  
+    <hr>
+    <a href="webp.html">All Abayas</a>
+    <hr>
+    <a href="custom.html">Custom Order</a>
+    <hr>
+    <a href="order.html">My Order</a>
+    <hr>
+    
+</div>
+
+<div class="logout-section">
+    <a href="#" class="logout-btn">Log Out</a>
+</div>
+</div>
+
+<label for="menu-toggle" class="overlay"></label>
+<div class="designer-page-header">
+    <h2>Beshtah Designer</h2>
+    <p>Choose your image, model, and see a live preview</p>
+</div>
+
+<div class="designer-success-msg" id="successMsg">✓ Your design has been successfully saved!</div>
+
+<div class="designer-grid">
+    <div class="designer-card">
+        <h3>Design Steps</h3>
+
+        <label class="designer-step-label">Step 1: Upload Your Image</label>
+        <label class="designer-upload-area">
+            <div style="font-size: 30px; margin-bottom: 10px;">📤</div>
+            <h4 style="margin: 0; color: #333;">Drag image here or click to browse</h4>
+            <p style="margin: 5px 0 0; color: #888; font-size: 13px;">PNG, JPG (Max 5MB)</p>
+            <input type="file" id="imgInput" accept="image/*">
+        </label>
+
+        <label class="designer-step-label" style="margin-top: 30px;">Step 2: Choose Model</label>
+        <div class="designer-models-grid">
+            <label class="designer-model-option">
+                <input type="radio" name="model" value="Classic" checked>
+                <div class="designer-model-content"><h4>Classic</h4><p>Traditional design</p></div>
+            </label>
+            <label class="designer-model-option">
+                <input type="radio" name="model" value="Modern">
+                <div class="designer-model-content"><h4>Modern</h4><p>Contemporary look</p></div>
+            </label>
+            <label class="designer-model-option">
+                <input type="radio" name="model" value="Casual">
+                <div class="designer-model-content"><h4>Casual</h4><p>Everyday wear</p></div>
+            </label>
+            <label class="designer-model-option">
+                <input type="radio" name="model" value="Luxury">
+                <div class="designer-model-content"><h4>Luxury</h4><p>Premium style</p></div>
+            </label>
+        </div>
+
+        <label class="designer-step-label">Step 3: Choose Color</label>
+        <div class="designer-colors-flex">
+            <label class="designer-color-circle"><input type="radio" name="color" value="Black" checked><div class="designer-circle-fill" style="background: #111;"></div></label>
+            <label class="designer-color-circle"><input type="radio" name="color" value="Navy"><div class="designer-circle-fill" style="background: #1a2b4c;"></div></label>
+            <label class="designer-color-circle"><input type="radio" name="color" value="Maroon"><div class="designer-circle-fill" style="background: #5e112b;"></div></label>
+            <label class="designer-color-circle"><input type="radio" name="color" value="Grey"><div class="designer-circle-fill" style="background: #777;"></div></label>
+            <label class="designer-color-circle"><input type="radio" name="color" value="White"><div class="designer-circle-fill" style="background: #fff; border: 1px solid #ddd;"></div></label>
+        </div>
+
+        <label class="designer-step-label">Step 4: Additional Information</label>
+        <input type="text" class="designer-form-input" id="dName" placeholder="Design Name (e.g., My Luxury Abaya)">
+        <textarea class="designer-form-input designer-textarea" id="dDesc" placeholder="Tell us about your design vision..."></textarea>
+
+        <div style="margin-bottom: 20px; font-size: 13px;">
+            <input type="checkbox" id="terms" checked> I agree to terms of use and consent to saving my request
+        </div>
+
+        <button class="designer-btn-submit" onclick="submitData()">Save Design</button>
+    </div>
+
+    <div class="designer-card">
+        <h3>Design Preview</h3>
+        <div class="designer-preview-box" id="previewBox">
+            <span style="font-size: 40px; color: #a0aec0;">📸</span>
+            <p style="color: #64748b; margin-top: 10px;">Your design will appear here</p>
+            <img id="previewImg" style="display: none; width: 100%; height: 100%; object-fit: contain;">
+        </div>
+
+        <div class="designer-preview-details">
+            <div class="designer-detail-row"><span>Model:</span> <strong id="lblModel">Classic</strong></div>
+            <div class="designer-detail-row"><span>Color:</span> <strong id="lblColor">Black</strong></div>
+            <div class="designer-detail-row"><span>Status:</span> <strong style="color: #16a34a;">Ready to save ✓</strong></div>
+        </div>
+
+        <div style="background: #e0f2fe; color: #0284c7; padding: 12px; border-radius: 8px; margin-top: 15px; font-size: 13px; text-align: center;">
+            ℹ️ Your designs are automatically saved in our database
+        </div>
+    </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-links">
+            <a href="https://www.instagram.com/bishtah_line?igsh=YnFubHk4YnQycTdy" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+                </a>
+            <a href="contact.html">
+              Contact us
+            </a>
+        </div>
+        <p class="copyright">© 2026 All rights reserved</p>
+    </div>
+</footer>
+
+
+<a href="#top" class="back-to-top">↑</a>
+
+<script>
+const imgInput = document.getElementById('imgInput');
+const previewImg = document.getElementById('previewImg');
+const previewBox = document.getElementById('previewBox');
+
+imgInput.addEventListener('change', function(e) {
+    if (e.target.files[0]) {
+        const reader = new FileReader();
+        reader.onload = function(event) {
+            previewImg.src = event.target.result;
+            previewImg.style.display = 'block';
+            previewBox.querySelector('span').style.display = 'none';
+            previewBox.querySelector('p').style.display = 'none';
+            previewBox.style.border = 'none';
+        };
+        reader.readAsDataURL(e.target.files[0]);
+    }
+});
+
+document.querySelectorAll('input[type="radio"]').forEach(r => r.addEventListener('change', () => {
+    document.getElementById('lblModel').textContent = document.querySelector('input[name="model"]:checked').value;
+    document.getElementById('lblColor').textContent = document.querySelector('input[name="color"]:checked').value;
+}));
+
+function submitData() {
+    if (!imgInput.files[0]) return alert('Please upload an image first!');
+    if (!document.getElementById('dName').value) return alert('Please enter a design name!');
+    
+    const msg = document.getElementById('successMsg');
+    msg.classList.add('show');
+    window.scrollTo({top: 0, behavior: 'smooth'});
+    
+    setTimeout(() => {
+        msg.classList.remove('show');
+        imgInput.value = '';
+        document.getElementById('dName').value = '';
+        document.getElementById('dDesc').value = '';
+        previewImg.style.display = 'none';
+        previewBox.querySelector('span').style.display = 'block';
+        previewBox.querySelector('p').style.display = 'block';
+        previewBox.style.border = '1px dashed #cbd5e1';
+    }, 3000);
+}
+</script>
+</body>
+</html>

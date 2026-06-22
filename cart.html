@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bishtah - Episodes of Your Life</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Alyamama:wght@300;400;500;600;700;800;900&family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet"></head>
+<body>
+<div class="container">
+
+<input type="checkbox" id="menu-toggle">
+
+<div id="top"></div>
+
+    <!-- ===== HEADER ===== -->
+ <header class="store-header">
+
+    <div class="header-left">
+
+        <a href="cart.html" class="icon-btn">
+    <i class="fa-solid fa-cart-shopping"></i>
+</a>
+        <a href="wishlist.html" class="icon-btn">
+<i class="fa-solid fa-heart"></i>
+</a>
+
+    </div>
+
+
+    <div class="header-center">
+        <h1>BISHTAH LINE</h1>
+        <p>Episodes of Your Life</p>
+    </div>
+
+
+    <div class="header-right">
+
+        <label for="menu-toggle" class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+
+    </div>
+
+</header>
+
+
+
+<div class="sidebar">
+
+   <label for="menu-toggle" class="close-btn">
+      <i class="fa-solid fa-xmark"></i>
+   </label>
+
+   <div class="profile-section">
+    <a href="admin-log.html">
+        <img src="userr.png" class="profile-img">
+        <div class="username">Account</div>
+    </a>
+</div>
+
+
+<div class="sidebar-links">
+    <hr>
+     <a href="home.html">Home</a>  
+    <hr>
+    <a href="webp.html">All Abayas</a>
+    <hr>
+    <a href="custom.html">Custom Order</a>
+    <hr>
+    <a href="order.html">My Order</a>
+    <hr>
+    
+</div>
+
+<div class="logout-section">
+    <a href="#" class="logout-btn">Log Out</a>
+</div>
+</div>
+
+<label for="menu-toggle" class="overlay"></label>
+
+
+<main class="cart-page-container">
+<h2 class="cart-page-title">Shopping Cart</h2>
+
+<table class="cart-table">
+
+<tr>
+<th>Product</th>
+<th>Price</th>
+<th>Qty</th>
+<th>Total</th>
+<th>Action</th>
+</tr>
+
+<tr>
+
+<td>
+<div class="cart-product">
+
+<img src="a7.jpeg" alt="Classic Abaya" class="cart-img">
+
+<div class="cart-info">
+<strong>Maha Abaya</strong>
+<small>Elegant  Design</small>
+</div>
+
+</div>
+</td>
+
+<td>350 SAR</td>
+
+<td>
+<input type="number" value="1" min="1" step="1" class="cart-qty-input">
+</td>
+
+<td>350 SAR</td>
+
+<td>
+<button class="cartpage-btn cart-btn-secondary">Update</button>
+<button class="cartpage-btn cart-btn-danger">Remove</button>
+</td>
+
+</tr>
+
+</table>
+
+<div style="margin-top:20px; display:flex; justify-content:flex-end;">
+<a href="checkout.html" class="cartpage-btn cart-btn-primary">
+Proceed to Checkout
+</a>
+</div>
+
+
+
+</main>
+
+
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-links">
+            <a href="https://www.instagram.com/bishtah_line?igsh=YnFubHk4YnQycTdy" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+                </a>
+            <a href="contact.html">
+              Contact us
+            </a>
+        </div>
+        <p class="copyright">© 2026 All rights reserved</p>
+    </div>
+</footer>
+
+
+<a href="#top" class="back-to-top">↑</a>
+
+</div>
+
+</body>
+</html>

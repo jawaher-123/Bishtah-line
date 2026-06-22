@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Orders | BISHTAH LINE</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Alyamama:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body class="floral-bg orders-page">
+
+<div class="container">
+
+<input type="checkbox" id="menu-toggle">
+<div id="top"></div>
+
+<!-- ===== HEADER + SIDEBAR ===== -->
+<header class="store-header">
+
+    <div class="header-left">
+        <a href="cart.html" class="icon-btn"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a href="wishlist.html" class="icon-btn"><i class="fa-solid fa-heart"></i></a>
+    </div>
+
+    <div class="header-center">
+        <h1>BISHTAH LINE</h1>
+        <p>Your Orders History</p>
+    </div>
+
+    <div class="header-right">
+        <label for="menu-toggle" class="menu-icon"><i class="fa-solid fa-bars"></i></label>
+    </div>
+
+</header>
+
+<div class="sidebar">
+   <label for="menu-toggle" class="close-btn"><i class="fa-solid fa-xmark"></i></label>
+
+   <div class="profile-section">
+    <a href="admin-log.html">
+        <img src="userr.png" class="profile-img">
+        <div class="username">Account</div>
+     </a>
+   </div>
+
+   <div class="sidebar-links">
+       <hr>
+       <a href="home.html">Home</a>
+       <hr>
+       <a href="webp.html">All Abayas</a>
+       <hr>
+       <a href="custom.html">Custom Order</a>
+       <hr>
+       <a href="order.html" style="color:#444;    font-size:20px;">My Order</a>
+       <hr>
+   </div>
+
+   <div class="logout-section">
+       <a href="#" class="logout-btn">Log Out</a>
+   </div>
+</div>
+
+<label for="menu-toggle" class="overlay"></label>
+
+<!-- ===== MAIN CONTENT ===== -->
+<main class="fl-container" style="padding:40px;">
+
+<section class="fl-card">
+<h1 style="font-family:'Alyamama';">
+Track Your Abayas ✨
+</h1>
+
+<p class="fl-muted">
+Here you can see your custom designs, selected sizes, and current status.
+</p>
+</section>
+
+
+<section class="fl-card">
+<div style="overflow:auto;">
+
+<table class="orders-table">
+
+<thead>
+<tr>
+<th>Order ID</th>
+<th>Preview</th>
+<th>Design Name</th>
+<th>Size</th>
+<th>Color</th>
+<th>Status</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr class="order-row">
+<td style="font-weight:900;color:#7c90a5;">#BISHT-9901</td>
+<td><img src="7.jpg.jpeg" style="width:50px;height:70px;border-radius:8px;object-fit:cover;"></td>
+<td style="font-weight:700;">Quarter Cloché</td>
+<td><span class="size-badge">54</span></td>
+<td>Navy Blue</td>
+<td><span class="badge progress">In Progress</span></td>
+</tr>
+
+<tr class="order-row">
+<td style="font-weight:900;color:#7c90a5;">#BISHT-8842</td>
+<td><img src="6.jpg.jpeg" style="width:50px;height:70px;border-radius:8px;object-fit:cover;"></td>
+<td style="font-weight:700;">Classic Style</td>
+<td><span class="size-badge">52</span></td>
+<td>Black</td>
+<td><span class="badge completed">Completed</span></td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+</section>
+
+
+<div style="text-align:center;margin-top:20px;">
+<a href="custom.html" class="fl-btn fl-btn-primary" style="text-decoration:none;padding:12px 25px;background:#7c90a5;color:white;border-radius:12px;font-weight:900;">
++ Design Another Abaya
+</a>
+</div>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-links">
+
+            <a href="https://www.instagram.com/bishtah_line?igsh=YnFubHk4YnQycTdy" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+
+            <a href="contact.html">
+              Contact us
+            </a>
+
+        </div>
+
+        <p class="copyright">© 2026 All rights reserved</p>
+    </div>
+</footer>
+
+<a href="#top" class="back-to-top">↑</a>
+
+
+</body>
+</html>

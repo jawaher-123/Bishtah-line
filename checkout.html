@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bishtah - Episodes of Your Life</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Alyamama:wght@300;400;500;600;700;800;900&family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet"></head>
+<body class="checkout-page">
+<div class="container">
+
+<input type="checkbox" id="menu-toggle">
+
+<div id="top"></div>
+
+    <!-- ===== HEADER ===== -->
+ <header class="store-header">
+
+    <div class="header-left">
+
+        <a href="cart.html" class="icon-btn">
+    <i class="fa-solid fa-cart-shopping"></i>
+</a>
+
+        <a href="wishlist.html" class="icon-btn">
+<i class="fa-solid fa-heart"></i>
+</a>
+
+    </div>
+
+
+    <div class="header-center">
+        <h1>BISHTAH LINE</h1>
+        <p>Episodes of Your Life</p>
+    </div>
+
+
+    <div class="header-right">
+
+        <label for="menu-toggle" class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+
+    </div>
+
+</header>
+
+
+
+<div class="sidebar">
+
+   <label for="menu-toggle" class="close-btn">
+      <i class="fa-solid fa-xmark"></i>
+   </label>
+
+   <div class="profile-section">
+    <a href="admin-log.html">
+        <img src="userr.png" class="profile-img">
+        <div class="username">Account</div>
+    </a>
+</div>
+
+
+<div class="sidebar-links">
+    <hr>
+     <a href="home.html">Home</a>  
+    <hr>
+    <a href="webp.html">All Abayas</a>
+    <hr>
+    <a href="custom.html">Custom Order</a>
+    <hr>
+    <a href="order.html">My Order</a>
+    <hr>
+    
+</div>
+
+<div class="logout-section">
+    <a href="#" class="logout-btn">Log Out</a>
+</div>
+</div>
+
+<label for="menu-toggle" class="overlay"></label>
+
+
+
+<main class="page-container">
+<h2 class="page-title">Checkout</h2>
+
+<section class="checkout-wrap">
+
+<form class="checkout-form">
+
+<h3>Billing Details</h3>
+
+<label for="fullname">Full Name</label>
+<input
+type="text"
+id="fullname"
+name="fullname"
+placeholder="Enter your full name"
+required
+minlength="3">
+
+<label for="email">Email</label>
+<input
+type="email"
+id="email"
+name="email"
+placeholder="example@email.com"
+required>
+
+<label for="phone">Phone Number</label>
+<input
+type="tel"
+id="phone"
+name="phone"
+placeholder="05xxxxxxxx"
+required
+pattern="05[0-9]{8}"
+maxlength="10"
+title="Phone number must start with 05 and contain exactly 10 digits">
+
+<label for="city">City</label>
+<input
+type="text"
+id="city"
+name="city"
+placeholder="Enter your city"
+required>
+
+<label for="district">District</label>
+<input
+type="text"
+id="district"
+name="district"
+placeholder="Enter your district"
+required>
+
+<label for="payment">Payment Method</label>
+
+<select id="payment" name="payment" required>
+<option value="">Select</option>
+<option>Credit Card</option>
+<option>Cash on Delivery</option>
+</select>
+
+<button class="btn btn-primary" type="submit">
+Confirm Order
+</button>
+
+</form>
+
+<aside class="order-summary">
+
+<h3>Order Summary</h3>
+
+<div class="sum-row">
+<span>Maha Abaya × 1</span>
+<span>350 SAR</span>
+</div>
+
+<div class="sum-row">
+<span>Shipping</span>
+<span>20 SAR</span>
+</div>
+
+<div class="sum-row total-row">
+<strong>Total</strong>
+<strong>370 SAR</strong>
+</div>
+
+<br>
+
+<a href="cart.html" class="btn btn-secondary">
+Back to Cart
+</a>
+
+</aside>
+
+</section>
+</main>
+
+
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-links">
+            <a href="https://www.instagram.com/bishtah_line?igsh=YnFubHk4YnQycTdy" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+                </a>
+            <a href="contact.html">
+              Contact us
+            </a>
+        </div>
+        <p class="copyright">© 2026 All rights reserved</p>
+    </div>
+</footer>
+
+
+<a href="#top" class="back-to-top">↑</a>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,173 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bishtah - Episodes of Your Life</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container">
+
+<input type="checkbox" id="menu-toggle">
+
+<div id="top"></div>
+<header class="store-header">
+
+    <div class="header-left">
+
+        <a href="cart.html" class="icon-btn">
+    <i class="fa-solid fa-cart-shopping"></i>
+</a>
+
+        <a href="wishlist.html" class="icon-btn">
+<i class="fa-solid fa-heart"></i>
+</a>
+
+    </div>
+
+
+    <div class="header-center">
+        <h1>BISHTAH LINE</h1>
+        <p>Episodes of Your Life</p>
+    </div>
+
+
+    <div class="header-right">
+
+        <label for="menu-toggle" class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+
+    </div>
+
+</header>
+
+
+
+<div class="sidebar">
+
+   <label for="menu-toggle" class="close-btn">
+      <i class="fa-solid fa-xmark"></i>
+   </label>
+
+   <div class="profile-section">
+     <a href="admin-log.html">
+        <img src="userr.png" class="profile-img">
+        <div class="username">Account</div>
+    </a>
+</div>
+
+
+<div class="sidebar-links">
+    <hr>
+     <a href="home.html">Home</a>  
+    <hr>
+    <a href="webp.html">All Abayas</a>
+    <hr>
+   <a href="custom.html">Custom Order</a>
+    <hr>
+    <a href="order.html">My Order</a>
+    <hr>
+    
+</div>
+
+<div class="logout-section">
+    <a href="#" class="logout-btn">Log Out</a>
+</div>
+</div>
+
+<label for="menu-toggle" class="overlay"></label>
+
+<input type="checkbox" id="wishlist-page-trigger">
+
+<div class="wishlist-page">
+    <label for="wishlist-page-trigger" class="close-wishlist">✕ BACK TO SHOP</label>
+    <div class="section-header">
+        <h2>Your Wishlist</h2>
+        <p>Your favorite pieces in one place.</p>
+    </div>
+    
+    <div class="empty-wish-msg">Your favorites list is currently empty.</div>
+
+    <div class="wish-list-grid">
+        <div class="wish-item-card item-1-wish"><img src="a7.jpeg"><h4>Royal Black</h4></div>
+        <div class="wish-item-card item-2-wish"><img src="a6.jpeg"><h4>Soft Classic</h4></div>
+        <div class="wish-item-card item-3-wish"><img src="a5.jpeg"><h4>Midnight Silk</h4></div>
+    </div>
+</div>
+
+
+
+    <div class="slider-container">
+        <div class="slider-images">
+            <div class="slide-wrap"><img src="a7.jpeg"></div>
+            <div class="slide-wrap"><img src="a6.jpeg"></div>
+        </div>
+        <div class="slider-content-overlay">
+            <h2>Welcome</h2>
+            <p>To Episodes of Wonder</p>
+            <a href="webp.html" class="shop-button">Explore Now</a>
+        </div>
+    </div>
+
+    <section id="shop" class="best-sellers-section">
+        <div class="section-header"><h2>Best Sellers</h2><p>Our most loved pieces.</p></div>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image-wrap">
+                    <label for="w1" class="wishlist-btn"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></label>
+                    <span class="tag">Best</span>
+                    <img src="a7.jpeg">
+                    <div class="product-info-overlay"><h3>Maha Abaya</h3><div class="add-btn">View Details</div></div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image-wrap">
+                    <label for="w2" class="wishlist-btn"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></label>
+                    <span class="tag">New</span>
+                    <img src="a6.jpeg">
+                    <div class="product-info-overlay"><h3>Pearl Abaya</h3><div class="add-btn">View Details</div></div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image-wrap">
+                    <label for="w3" class="wishlist-btn"><svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg></label>
+                    <span class="tag">Hot</span>
+                    <img src="a5.jpeg">
+                    <div class="product-info-overlay"><h3>Lulu Abaya</h3><div class="add-btn">View Details</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="about-text"><h1>Our Story</h1><p>Bishtah redefines daily elegance with high-quality abayas designed for the modern woman.</p></div>
+        <div class="about-visual"><img src="a1.jpeg"></div>
+    </section>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-links">
+            <a href="https://www.instagram.com/bishtah_line?igsh=YnFubHk4YnQycTdy" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+                </a>
+            <a href="contact.html">
+              Contact us
+            </a>
+        </div>
+        <p class="copyright">© 2026 All rights reserved</p>
+    </div>
+</footer>
+
+
+<a href="#top" class="back-to-top">↑</a>
+</body>
+</html>

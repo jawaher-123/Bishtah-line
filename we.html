@@ -1,0 +1,165 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bishtah - Episodes of Your Life</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Alyamama:wght@300;400;500;600;700;800;900&family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
+
+<?php
+include "db.php";
+
+$sql = "SELECT * FROM Abayas";
+$result = mysqli_query($conn, $sql);
+?>
+
+</head>
+
+<body>
+<div class="container">
+
+<input type="checkbox" id="menu-toggle">
+
+<div id="top"></div>
+
+<!-- ===== HEADER ===== -->
+<header class="store-header">
+
+    <div class="header-left">
+        <a href="cart.php" class="icon-btn">
+            <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+
+        <a href="wishlist.php" class="icon-btn">
+            <i class="fa-solid fa-heart"></i>
+        </a>
+    </div>
+
+    <div class="header-center">
+        <h1>BISHTAH LINE</h1>
+        <p>Episodes of Your Life</p>
+    </div>
+
+    <div class="header-right">
+        <label for="menu-toggle" class="menu-icon">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+    </div>
+
+</header>
+
+<div class="sidebar">
+
+   <label for="menu-toggle" class="close-btn">
+      <i class="fa-solid fa-xmark"></i>
+   </label>
+
+   <div class="profile-section">
+    <a href="admin-log.php">
+        <img src="userr.png" class="profile-img">
+        <div class="username">Account</div>
+    </a>
+   </div>
+
+<div class="sidebar-links">
+    <hr>
+     <a href="home.php">Home</a>  
+    <hr>
+    <a href="webp.php">All Abayas</a>
+    <hr>
+    <a href="custom.php">Custom Order</a>
+    <hr>
+    <a href="order.php">My Order</a>
+    <hr>
+</div>
+
+<div class="logout-section">
+    <a href="#" class="logout-btn">Log Out</a>
+</div>
+
+</div>
+
+<label for="menu-toggle" class="overlay"></label>
+
+<div class="search-wrapper">
+    <div class="search-section">
+        <input type="text" placeholder="Search Abayas...">
+
+        <select>
+            <option>Filter by Color</option>
+            <option>Black</option>
+            <option>Beige</option>
+            <option>Grey</option>
+        </select>
+
+        <select>
+            <option>Filter by Price</option>
+            <option>Under 200</option>
+            <option>200 - 400</option>
+            <option>Over 400</option>
+        </select>
+    </div>
+</div>
+
+<section class="page-title">
+    <h2>All Abayas</h2>
+</section> 
+
+<div class="home_products">
+
+<?php while($row = mysqli_fetch_assoc($result)) { ?>
+
+<div class="product-card">
+  <div class="product-image-wrap">
+
+    <label class="wishlist-btn">
+      <i class="fa-regular fa-heart"></i>
+    </label>
+
+    <?php if(!empty($row['tag'])) { ?>
+        <span class="tag"><?php echo $row['tag']; ?></span>
+    <?php } ?>
+
+    <img src="<?php echo $row['image']; ?>" alt="عباية">
+
+    <div class="product-info-overlay">
+      <h3><?php echo $row['name']; ?></h3>
+
+      <a href="abdet.php?id=<?php echo $row['id']; ?>" class="add-btn">
+        View Details
+      </a>
+    </div>
+
+  </div>
+</div>
+
+<?php } ?>
+
+</div>
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="footer-links">
+            <a href="https://www.instagram.com/bishtah_line?igsh=YnFubHk4YnQycTdy" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="contact.php">
+              Contact us
+            </a>
+        </div>
+        <p class="copyright">©️ 2026 All rights reserved</p>
+    </div>
+</footer>
+
+<a href="#top" class="back-to-top">↑</a>
+
+</div>
+</body>
+</html>
